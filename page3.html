@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>
+      menghitung bangub datar persegi
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mt-5">
+    <div class="row g-3"">
+        <div class="col-6">
+            <div class="card">
+      <div class="card-body">
+  <h5 class="card-header text-center">luas persegi panjang</h5>
+    <h5 class="card-title text-center">rumus luas persegi panjang/h5>
+    <p class="sisi text-center">(sisi x sisi)</p>
+    <div class="text-center">
+    <input type="number" placeholder="masukan nilai disini" id="panjang"><br>
+    <button class="btn btn-primary my-3" onclick="hitungpersegipanjang()">hitung</button>
+    <div id="hasil" class="hasil"> 
+    </div>
+    </div>
+  </div>
+</div>
+        </div>
+      <div class="col-6">
+            <div class="card">
+      <div class="card-body">
+  <h5 class="card-header text-center">keliling persegi panjang</h5>
+    <h5 class="card-title text-center">rumus keliling persegi panjang</h5>
+    <p class="sisi text-center">(4 x sisi)</p>
+    <div class="text-center">
+    <input type="number" placeholder="masukan nilai disini" id="lebar"><br>
+    <button class="btn btn-primary my-3" onclick="hitungpersegipanjang()">hitung</button>
+    <div id="hasil" class="hasil"> 
+    </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+
+</div>
+    </div>
+  
+  <script>
+    function hitungpersegipanjang() {
+      let panjang= document.getElementById("panjang").value;
+       let lebar= document.getElementById("lebar").value;
+      if (panjang === "" ||lebar ==="|| panjang <=0||lebar <=0){
+        alert("masukan nilai sisi yang valid");
+        return;
+      }
+      panjang = parseFloat(panjang);
+      lebar = parseFloat(lebar);
+      let luas = panjang * lebar;
+      let keliling = 2 * (panjang + lebar);
+      document.getElementById("hasil").innerHTML=`rumus: 4 x${sisi}<br>hasil; 
+      ${hasil}`;
+    
+  </script>
+  </body> src=
+  </html>
