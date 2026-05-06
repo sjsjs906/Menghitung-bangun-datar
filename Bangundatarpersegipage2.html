@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>
+      menghitung bangub datar persegi
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="card row g-4">
+      <div class="card-body">
+  <h5 class="card-header text-center">luas persegi</h5>
+    <h5 class="card-title text-center">rumus luas persegi</h5>
+    <p class="sisi text-center">(sisi x sisi)</p>
+    <div class="text-center">
+    <input type="number" placeholder="masukan nilai disini" id="nilailuas"><br>
+    <button class="btn btn-primary my-3" onclick="hitungLuas()">hitung</button>
+    <div id="hasilLuas" class="hasil"> 
+    </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    function hitungLuas() {
+      let sisi= document.getElementById("nilailuas").value;
+      if (sisi === "" || sisi <=0){
+        alert("masukan nilai sisi yang valid");
+        return;
+      }
+      let hasil= sisi * sisi;
+      document.getElementById("hasilLuas").innerHTML=`rumus:${sisi}x${sisi}<br> hasil;
+      ${hasil}`;
+    }
+  </script>
+  
+      <div class="card row g-4">
+      <div class="card-body">
+  <h5 class="card-header text-center">luas persegi</h5>
+    <h5 class="card-title text-center">rumus luas persegi</h5>
+    <p class="sisi text-center">(sisi x sisi)</p>
+    <div class="text-center">
+    <input type="number" placeholder="masukan nilai disini" id="nilailuas"><br>
+    <button class="btn btn-primary my-3" onclick="hitungLuas()">hitung</button>
+    <div id="hasilLuas" class="hasil"> 
+    </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    function hitungLuas() {
+      let sisi= document.getElementById("nilailuas").value;
+      if (sisi === "" || sisi <=0){
+        alert("masukan nilai sisi yang valid");
+        return;
+      }
+      let hasil= 4 * sisi;
+      document.getElementById("hasilLuas").innerHTML=`rumus:${sisi}x${sisi}<br> hasil;
+      ${hasil}`;
+    }
+    </script>
+  </body>
+  </html>
